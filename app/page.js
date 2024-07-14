@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 async function getData() {
   const result = await fetch(process.env.API_URL, {
@@ -6,7 +6,7 @@ async function getData() {
       // revalidate: 60,
     },
   });
-  if(!result.ok) {
+  if (!result.ok) {
     throw new Error('Failed to fetch data');
   }
   return result.json();
@@ -17,6 +17,53 @@ export default async function Home() {
   return (
     <section>
       <div className='news-box'>
+        {/* ****START*** */}
+        <div className='imageTat__inner container'>
+          <div className='imageTat__wrapper '>
+            <h3 className='imageTat__title'>Срочная новость!</h3>
+            <p className='imageTat__text'>
+              Сегодня все судакчане отмечают большой праздник!
+            </p>
+            <p>
+              Мы празднуем День рождения нашего самого Почетного гражданина, а,
+              вернее, Гражданки 
+            </p>
+            <p className='name'>Татьяны Валериевны!</p>
+            <p>
+              Поздравляем нашу любимую <span className='name1'>Татьяну!</span>
+            </p>
+            <p>Желаем ей здоровья и счастья!</p>
+            <p>Потому что всему остальному нам всем только учиться у неё!</p>
+            <p>
+              С Днём рождения, <span className='name'>Танечка!</span>
+            </p>
+          </div>
+          <div className='imageTat__wrapper-img'>
+            <Image
+              className='imageTat w-full h-auto'
+              width={0}
+              height={0}
+              sizes='100vw'
+              src={'/images/girl.jpg'}
+              alt='image'
+            />
+            <Image
+              className='imageTat'
+              width={500}
+              height={500}
+              src={'/images/girl1.jpg'}
+              alt='image'
+            />
+            <Image
+              className='imageTat'
+              width={500}
+              height={500}
+              src={'/images/girl2.jpg'}
+              alt='image'
+            />
+          </div>
+        </div>
+        {/* ****FINISH******* */}
         {data.map((el, idx) => (
           <div key={idx} className='item-inner'>
             <a target='_blank' href={el.link}>
