@@ -109,6 +109,7 @@ body {
     )
     rgb(var(--background-start-rgb));
   background-color: rgb(245 245 201 / 99%);
+  /* background-image: url("data:image/svg+xml,%3Csvg width='114' height='115' viewBox='0 0 114 115' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 114.935C0 101.68 10.7452 90.9347 24 90.9347H43C68.9574 90.9347 90 69.8921 90 43.9347V24C90 10.7451 100.745 0 114 0H24C10.7452 0 0 10.7452 0 24V114.935Z' fill='%23F8F8F8'/%3E%3C/svg%3E%0A"); */
 }
 
 .container {

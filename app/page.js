@@ -3,7 +3,7 @@ import Image from 'next/image';
 async function getData() {
   const result = await fetch(process.env.API_URL, {
     next: {
-      revalidate: 1800,
+      revalidate: 600,
     },
   });
   if (!result.ok) {
@@ -20,15 +20,16 @@ export default async function Home() {
         {/* ****START*** */}
         <div className='imageTat__inner container'>
           <div className='imageTat__wrapper '>
-            <h3 className='imageTat__title'>Срочная новость!</h3>
+            <h3 className='imageTat__title'>Важная новость!</h3>
             <p className='imageTat__text'>
-              Сегодня все судакчане отмечают большой праздник!
+              Судакчане продолжают отмечать большой праздник!
             </p>
             <p>
               Мы празднуем День рождения нашего самого Почетного гражданина, а,
               вернее, Гражданки 
             </p>
             <p className='name'>Татьяны Валериевны!</p>
+            <p>У кого-то есть только один Татьянин день, а у нас праздник на всю неделю!</p>
             <p>
               Поздравляем нашу любимую <span className='name1'>Татьяну!</span>
             </p>
