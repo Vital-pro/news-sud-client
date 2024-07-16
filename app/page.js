@@ -17,6 +17,7 @@ export default async function Home() {
   return (
     <section>
       <div className='news-box'>
+
         {/* ****START*** */}
         <div className='imageTat__inner container'>
           <div className='imageTat__wrapper '>
@@ -26,10 +27,13 @@ export default async function Home() {
             </p>
             <p>
               Мы празднуем День рождения нашего самого Почетного гражданина, а,
-              вернее, Гражданки 
+              вернее, Гражданки
             </p>
             <p className='name'>Татьяны Валериевны!</p>
-            <p>У кого-то есть только один Татьянин день, а у нас праздник на всю неделю!</p>
+            <p>
+              У кого-то есть только один Татьянин день, а у нас праздник на всю
+              неделю!
+            </p>
             <p>
               Поздравляем нашу любимую <span className='name1'>Татьяну!</span>
             </p>

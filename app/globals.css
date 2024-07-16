@@ -93,6 +93,9 @@
 }
 
 /* FINISH */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   position: relative;
@@ -134,16 +137,40 @@ body {
   /* max-width: 1210px; */
   padding: 0 0% 7% 0;
   margin-right: 6%;
+
+  /* start */
+  color: #fff;
+  display: inline-block;
+  /* animation: rotate-x 10s linear infinite; */
 }
 
 .header__title {
   font-size: clamp(2.375rem, -0.501rem + 14.38vw, 10.375rem);
   text-shadow: 6px 9px 16px #ffc107;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 800;
   font-style: italic;
   text-align: right;
   line-height: 1;
+
+  /* start */
+  display: inline-block;
+  animation: rotate-x 10s linear infinite;
+}
+
+@keyframes rotate-x {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateX(40deg) rotateY(0deg);
+    /* text-shadow: 10px 10px 6px #ffc107; */
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
 }
 
 @media screen and (max-width: 992px) {
