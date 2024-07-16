@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { ScrollToTop }  from '../components/ScrollToTop';
 
 async function getData() {
   const result = await fetch(process.env.API_URL, {
@@ -13,10 +14,13 @@ async function getData() {
 }
 
 export default async function Home() {
+
   const data = await getData();
   return (
     <section>
       <div className='news-box'>
+
+        <ScrollToTop />
 
         {/* ****START*** */}
         <div className='imageTat__inner container'>
