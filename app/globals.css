@@ -19,7 +19,7 @@
   }
 }
 
-/* START */
+/*! START styles for greetings */
 .imageTat__inner {
   /* background: url('/images/flower.jpg'); */
   background-color: #fff;
@@ -61,8 +61,8 @@
   margin-bottom: clamp(0.875rem, 0.602rem + 1.36vw, 1.625rem);
 }
 
-.imageTat__text {
-}
+/* .imageTat__text {
+} */
 
 .imageTat__wrapper-img {
   display: flex;
@@ -75,8 +75,8 @@
   width: 100%;
 }
 
-.imageTat {
-}
+/* .imageTat {
+} */
 
 @media screen and (max-width: 992px) {
   .imageTat__wrapper-img {
@@ -91,8 +91,8 @@
     width: 100%;
   }
 }
+/* !FINISH styles for greetings*/
 
-/* FINISH */
 html {
   scroll-behavior: smooth;
 }

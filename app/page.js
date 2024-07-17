@@ -4,7 +4,8 @@ import { ScrollToTop }  from '../components/ScrollToTop';
 async function getData() {
   const result = await fetch(process.env.API_URL, {
     next: {
-      revalidate: 600,
+      revalidate: 60,
+      tags: ['news-box'],
     },
   });
   if (!result.ok) {
@@ -19,11 +20,10 @@ export default async function Home() {
   return (
     <section>
       <div className='news-box'>
-
         <ScrollToTop />
 
-        {/* ****START*** */}
-        <div className='imageTat__inner container'>
+        {/* ****START for greetings**display: 'none* */}
+        {/* <div style={{ display: 'none' }} className='imageTat__inner container'>
           <div className='imageTat__wrapper '>
             <h3 className='imageTat__title'>Важная новость!</h3>
             <p className='imageTat__text'>
@@ -71,8 +71,9 @@ export default async function Home() {
               alt='image'
             />
           </div>
-        </div>
-        {/* ****FINISH******* */}
+        </div> */}
+        {/* ****FINISH for greetings***display: 'none*** */}
+
         {data.map((el, idx) => (
           <div key={idx} className='item-inner'>
             <a target='_blank' href={el.link}>
