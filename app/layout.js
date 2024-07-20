@@ -7,8 +7,9 @@ import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Судак | Sudak',
+  title: 'Судак Крым курорт',
   description: 'Крым город Судак',
+  keywords: 'Судак, Крым, Курорт',
 };
 
 let date = new Date();
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
         <main className='main container'>
           <div className='geolocation-wrapper'>
             <h1>Крым г.Судак</h1>
-            <time dateTime={date.toLocaleString('ru-RU')}>
+            <time dateTime={date}>
               Сегодня:{' '}
               {date.toLocaleString('ru-RU', { month: 'long', day: 'numeric' })}{' '}
               {date.getFullYear()} г.
