@@ -80,7 +80,7 @@ export default async function Home() {
               <img src={el.imageUrl} alt={el.title} />
               <h2>
                 {el.title}
-                <span>Подробнее в первоисточнике... &#10132;</span>
+                <p>Подробнее в первоисточнике... &#10132;</p>
               </h2>
             </a>
           </div>

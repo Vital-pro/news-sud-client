@@ -364,7 +364,7 @@ time {
 }
 
 @media screen and (max-width: 992px) {
-  .header h2 {
+  .header p {
     font-size: clamp(2.875rem, 0.315rem + 12.8vw, 8.25rem);
   }
 }

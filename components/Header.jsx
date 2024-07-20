@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header className='header'>
       <div className='header__container container'>
-        <h2 className='header__title'>Солнечные новости</h2>
+        <p className='header__title'>Солнечные новости</p>
       </div>
       <nav>
         {/* <Link href='/'>Home</Link>
