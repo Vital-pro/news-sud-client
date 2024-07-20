@@ -244,7 +244,7 @@ time {
   line-height: 1.5;
 }
 
-.geolocation-wrapper a {
+/* .geolocation-wrapper a {
   background-color: #285e8a;
   box-shadow: 16px 12px 15px 3px #607d8b;
   padding: 12px 18px;
@@ -252,18 +252,18 @@ time {
   color: #fff;
   margin-left: auto;
   transition: all 0.5s ease;
-}
+} */
 
-.geolocation-wrapper a:hover {
-  background-color: #5496cc;
+/* .geolocation-wrapper a:hover { */
+  /* background-color: #5496cc; */
   /* animation: color-rotate 1s linear infinite; */
-}
+/* } */
 
-.geolocation-wrapper a:active {
-  background-color: #1a3c58;
-  transform: translate(0, 6px);
+/* .geolocation-wrapper a:active { */
+  /* background-color: #1a3c58; */
+  /* transform: translate(0, 6px); */
   /* animation: color-rotate 1s linear infinite; */
-}
+/* } */
 
 @layer utilities {
   .text-balance {
@@ -317,11 +317,11 @@ time {
     grid-template-columns: 1fr 1fr;
   }
 
-  .geolocation-wrapper a {
+  /* .geolocation-wrapper a {
     grid-row: none;
     margin-left: inherit;
     margin-right: auto;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -345,9 +345,9 @@ time {
     font-size: clamp(1rem, 0.821rem + 0.89vw, 1.25rem);
   }
 
-  .geolocation-wrapper a {
+  /* .geolocation-wrapper a {
     font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
-  }
+  } */
 }
 
 .footer {

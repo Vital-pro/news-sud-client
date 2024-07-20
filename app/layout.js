@@ -12,9 +12,9 @@ export const metadata = {
   keywords: 'Судак, Крым, Курорт',
 };
 
-let date = new Date();
 
 export default function RootLayout({ children }) {
+  let date = new Date();
   return (
     <html lang='ru'>
       <body className={inter.className}>
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
               {date.toLocaleString('ru-RU', { month: 'long', day: 'numeric' })}{' '}
               {date.getFullYear()} г.
             </time>
-            <Link href={'/'}>Получить свежие вести</Link>
+            {/* <Link href={'/'}>Получить свежие вести</Link> */}
           </div>
           {children}
         </main>
