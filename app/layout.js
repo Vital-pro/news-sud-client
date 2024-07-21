@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <main className='main container'>
           <div className='geolocation-wrapper'>
             <h1>Крым г.Судак</h1>
-            <time dateTime={date.getHours() + ':' + date.getMinutes()}>
+            <time dateTime={date.getHours() + 3 + ':' + date.getMinutes()}>
               Сегодня:{' '}
               {date.toLocaleString('ru-RU', { month: 'long', day: 'numeric' })}{' '}
               {date.getFullYear()} г.

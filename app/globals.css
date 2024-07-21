@@ -291,7 +291,8 @@ time {
   font-size: clamp(1.25rem, 0.601rem + 1.35vw, 1.625rem);
 }
 
-.item-inner h2 p {
+.item-inner h2 span {
+  display: block;
   font-size: 14px;
   font-weight: 400;
 }
