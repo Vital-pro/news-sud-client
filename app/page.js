@@ -4,7 +4,7 @@ import { ScrollToTop }  from '../components/ScrollToTop';
 async function getData() {
   const result = await fetch(process.env.API_URL, {
     next: {
-      revalidate: 60,
+      revalidate: 30,
       tags: ['news-box'],
     },
   });
