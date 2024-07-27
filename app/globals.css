@@ -283,6 +283,8 @@ time {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 5px 10px 20px 0px #c1c1c1;
+
+  min-height: 230px;
 }
 
 .item-inner h2 {

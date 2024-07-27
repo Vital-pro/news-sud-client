@@ -13,6 +13,13 @@ export const metadata = {
     'Актуальные новости города Судака, подробности погоды. Смотрите и читайте информацио о самых свежих событиях города Судака - курортного города Крыма. На сайте можно увидеть изменения в жизни города, проходящие культурные события и многое другое. Будьте в курсе! Спасибо за внимание!',
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 
 export default function RootLayout({ children }) {
   let date = new Date();
