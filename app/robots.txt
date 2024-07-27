@@ -8,7 +8,6 @@ Disallow: /templates/
 
 
 User-Agent: *
-Allow robots to be able to crawl the OG Image API route and all the subpaths
 Host: https://sudak.site
 Sitemap: https://sudak.site/sitemap.xml
 Sitemap: https://vercel.com/sitemap.xml
