@@ -5,7 +5,7 @@ async function getData() {
   const result = await fetch(process.env.API_URL, {
     next: {
       revalidate: 10,
-      tags: ['news-box'],
+      // tags: ['news-box'],
     },
   });
   if (!result.ok) {
